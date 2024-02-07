@@ -92,7 +92,7 @@ export default {
       }
       axios
         .put(
-          `http://localhost:3000/api/updateTeacher/${this.$props.teacher.id}`,
+          `https://plain-earrings-crab.cyclic.app/api/updateTeacher/${this.$props.teacher.id}`,
           this.editedTeacher
         )
         .then((response) => {
