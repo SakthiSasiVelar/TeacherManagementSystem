@@ -81,7 +81,7 @@ export default {
         alert("Fill al the fields");
         return;
       }
-      const url = "http://localhost:3000/api/addTeacher";
+      const url = "https://plain-earrings-crab.cyclic.app//api/addTeacher";
       axios
         .post(url, this.Teacher)
         .then((response) => {
