@@ -192,7 +192,7 @@ export default {
   methods: {
     viewTeacherRecords() {
       axios
-        .get("http://localhost:3000/api/getAllTeachers")
+        .get("https://plain-earrings-crab.cyclic.app/api/getAllTeachers")
         .then((response) => {
           this.setData(response.data.data);
         })
@@ -226,7 +226,7 @@ export default {
     },
     deleteTeacher(teacher) {
       axios
-        .delete("http://localhost:3000/api/deleteTeacher/" + teacher.id)
+        .delete("https://plain-earrings-crab.cyclic.app/api/deleteTeacher/" + teacher.id)
         .then((response) => {
           if (response.status == 200) {
             this.handleDelete();
